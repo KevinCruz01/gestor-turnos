@@ -44,7 +44,7 @@ const Clients = () => {
 
     return (
         <div className="container mt-5">
-            <h2 className="mb-4">Gestión de Clientes</h2>
+            <h2 className="text-dark mb-4">Gestión de Clientes</h2>
             
             <div className="row">
                 {/* Columna del Formulario */}

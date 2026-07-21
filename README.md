@@ -34,12 +34,12 @@ cd gestor-turnos
 ### 2. Configurar la Base de Datos
 * Crea una base de datos en tu gestor MySQL llamada `gestor_turnos`.
 * Ejecuta el script SQL incluido en `backend/database.sql` para generar las tablas.
-/////////////////////////////////////////////////////////////////////////////////////////////////
+
 ### 3. Configurar el Backend
 
 cd backend
 npm install
-/////////////////////////////////////////////////////////////////////////////////////////////////
+
 * Crea un archivo `.env` en la carpeta `backend` basado en tus credenciales locales de MySQL:
   # Configuracion de base de datos
   
@@ -53,14 +53,14 @@ npm install
 
 PORT=3000
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
+
 ### 4. Configurar el Frontend
 Abre una nueva terminal en la raíz del proyecto.
 
 cd frontend
 npm install
 npm run dev
-/////////////////////////////////////////////////////////////////////////////////////////////////
+
 * Visita `http://localhost:5173` en tu navegador.
 
 
