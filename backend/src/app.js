@@ -1,13 +1,5 @@
 require("dotenv").config();
 
-console.log({
-    DB_HOST: process.env.DB_HOST,
-    DB_USER: process.env.DB_USER,
-    DB_PASSWORD: process.env.DB_PASSWORD,
-    DB_NAME: process.env.DB_NAME,
-    DB_PORT: process.env.DB_PORT
-});
-
 const express = require('express');
 const cors = require('cors');
 
@@ -19,9 +11,13 @@ app.use(express.json());
 
 // Importar rutas
 const clientRoutes = require('./routes/clientRoutes');
+const serviceRoutes = require('./routes/serviceRoutes');
+const appointmentRoutes = require('./routes/appointmentRoutes');
 
 // Usar rutas
 app.use('/api/clients', clientRoutes);
+app.use('/api/services', serviceRoutes);
+app.use('/api/appointments', appointmentRoutes);
 
 // Levantar el servidor
 const PORT = process.env.PORT || 3000;
